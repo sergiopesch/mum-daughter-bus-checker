@@ -29,8 +29,8 @@ It provides a simple JSON response with:
    Create a `.env` file in the backend directory with your API keys:
 
    ```
-   TFL_API_KEY=your_tfl_api_key
-   OPENWEATHER_API_KEY=your_openweather_api_key
+   TFL_PRIMARY_KEY=your_tfl_api_key
+   OWM_API_KEY=your_openweather_api_key
    ```
 
 4. **Run the Flask Server**
