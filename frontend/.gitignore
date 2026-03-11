@@ -1,41 +1,5 @@
-# Python
-venv/
-*.pyc
-__pycache__/
-*.egg-info
-
-# Node/React
-node_modules/
-build/
-# If using Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-
-# OS
-.DS_Store
-
-# Env files (secrets)
-.env
-*.env
-
-# Zappa artifacts
-.zappa/
-*.zip
-*.json
-
-# Logs
-logs/
-*.log
-
-# (Optional) 
-# If you have an IDE or code editor, ignore its settings
-.vscode/
-.idea/
-.zappa_settings.json
-.venv
-.myenv
-
+node_modules
+build
+.vite
+.env.local
+.env.*.local

@@ -4,7 +4,8 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+ALLOWED_ORIGIN = os.environ.get('ALLOWED_ORIGIN')
+CORS(app, resources={r"/api/*": {"origins": ALLOWED_ORIGIN.split(',') if ALLOWED_ORIGIN else '*'}})
 
 # ------------------------------------------------------
 # TFL Stop + Line Settings
@@ -141,4 +142,5 @@ def index():
     return "Hello from the Bus App!"
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    debug_mode = os.environ.get('FLASK_DEBUG', '').lower() in {'1', 'true', 'yes'}
+    app.run(debug=debug_mode, port=int(os.environ.get('PORT', 5001)))

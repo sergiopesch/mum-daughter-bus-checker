@@ -54,7 +54,7 @@ export default function BusCard({ busData, colorClass }) {
             {/* Left side: Bus icon & line */}
             <div style={{ display: 'flex', alignItems: 'center', minWidth: 0 }}>
               <img
-                src="/bus.png"
+                src="./bus.png"
                 alt="Bus icon"
                 style={{
                   width: '40px',

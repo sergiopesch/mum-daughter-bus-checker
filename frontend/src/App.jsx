@@ -1,6 +1,6 @@
-import HeroSection from './components/HeroSection';
-import WeatherCard from './components/WeatherCard';
-import BusCard from './components/BusCard';
+import HeroSection from './components/HeroSection.jsx';
+import WeatherCard from './components/WeatherCard.jsx';
+import BusCard from './components/BusCard.jsx';
 import './theme/variables.css';
 import './theme/global.css';
 import React, { useState, useEffect } from 'react';
@@ -24,7 +24,7 @@ export default function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const BACKEND_URL = 'https://3uekhchws8.execute-api.eu-west-2.amazonaws.com/dev/api/bus-info';
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'https://3uekhchws8.execute-api.eu-west-2.amazonaws.com/dev/api/bus-info';
 
   async function fetchBusData() {
     console.log("Starting fetchBusData...");

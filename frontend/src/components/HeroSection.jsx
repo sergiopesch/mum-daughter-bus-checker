@@ -27,7 +27,7 @@ export default function HeroSection() {
       }}
     >
       <img
-        src="/bus.png"
+        src="./bus.png"
         alt="Red London Bus"
         style={{ width: 80, height: 80 }}
       />
