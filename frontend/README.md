@@ -6,7 +6,7 @@ This frontend now uses Vite + React + Ionic.
 
 - `npm run dev` - start the Vite dev server
 - `npm start` - alias for `npm run dev`
-- `npm run build` - create a production build in `build/`
+- `npm run build` - create a production build in `dist/`
 - `npm run preview` - preview the production build locally
 
 ## Environment
